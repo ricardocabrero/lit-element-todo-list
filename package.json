@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "lit-element": "^2.4.0",
+    "polymer-cli": "Polymer/polymer-cli"
+  }
+}
