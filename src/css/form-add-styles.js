@@ -19,6 +19,12 @@ export const formCss = css`
         outline: none;
         padding: 0 5px;
         text-transform: capitalize;
+        fon-size: 14px;
+    }
+    @media(max-width: 550px) {
+        input {
+            font-size: 16px;
+        }  
     }
     button {
         width: 55px;
@@ -28,5 +34,11 @@ export const formCss = css`
         border: 1px solid #ccc;
         box-shadow: none;
         border-radius: 0 3px 3px 0;
+        font-size: 14px;
+    }
+    @media(max-width: 550px) {
+        button {
+            font-size: 16px;
+        }  
     }
 `

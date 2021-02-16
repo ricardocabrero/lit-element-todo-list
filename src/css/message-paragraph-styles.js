@@ -11,4 +11,9 @@ export const MessageParagraphCss = css`
         font-size: 14px;
         background: #fff;
     }
+    @media(max-width: 550px) {
+        p {
+            font-size: 16px;
+        }
+    }
 `

@@ -12,7 +12,15 @@ export const ButtonFilterCss = css`
         outline: none;
         width:90px;
         text-transform: capitalize;
+        font-size: 14px;
     }
+
+    @media(max-width: 550px) {
+        button {
+            font-size: 16px;
+        }
+    }
+
     button:disabled {
         background: #ffc107;
         color: #000;
