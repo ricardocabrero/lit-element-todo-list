@@ -9,6 +9,11 @@ export const mainCss = css`
         align-items: center;
         position: relative;
     }
+    @media(max-width: 550px) {
+        main {
+            310px;
+        }
+    }
     h1 {
         font-size: 20px;
         text-align: center;

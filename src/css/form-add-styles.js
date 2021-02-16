@@ -10,6 +10,11 @@ export const formCss = css`
         font-size: 16px;
         display: flex;
     }
+    @media(max-width: 550px) {
+        form {
+            width: 240px;
+        }  
+    }
     input {
         width: 170px;
         height: 100%;
@@ -20,6 +25,7 @@ export const formCss = css`
         padding: 0 5px;
         text-transform: capitalize;
         fon-size: 14px;
+        -webkit-border-radius: none;
     }
     @media(max-width: 550px) {
         input {
@@ -38,7 +44,8 @@ export const formCss = css`
     }
     @media(max-width: 550px) {
         button {
-            font-size: 16px;
+            font-size: 15px;
+            width: 70px;
         }  
     }
 `
