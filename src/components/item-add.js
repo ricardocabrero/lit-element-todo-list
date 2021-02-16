@@ -31,7 +31,6 @@ class ItemAdd extends LitElement {
 
     render() {
         const { id, description, selected } = this.todo;
-        debugger;
         return html`
         <li id=${id} class=${selected ? `selected` : ``}>
             <input @change=${() => this.handleToggle(id)}
