@@ -31,6 +31,11 @@ export const itemCss = css`
         height: 6px;
         border-bottom: 2px solid green;
     }
+    @media(max-width: 650px) {
+        .check {
+            margin-top: -4px;
+        }
+    }
     li.selected p {
         text-decoration: line-through;
     }
