@@ -19,7 +19,7 @@ class FilterButtons extends LitElement {
         this.type = {
             completed: 'completed',
             pending: 'pending',
-            todos: 'todos',
+            todos: 'all',
         }
     }
 

@@ -10,9 +10,10 @@ export const formCss = css`
         font-size: 16px;
         display: flex;
     }
-    @media(max-width: 550px) {
+    @media(max-width: 650px) {
         form {
-            width: 240px;
+            width: 255px;
+            height: 30px;
         }  
     }
     input {
@@ -25,11 +26,11 @@ export const formCss = css`
         padding: 0 5px;
         text-transform: capitalize;
         fon-size: 14px;
-        -webkit-border-radius: none;
+        -webkit-border-radius: 0;
     }
-    @media(max-width: 550px) {
+    @media(max-width: 650px) {
         input {
-            font-size: 16px;
+            font-size: 17px;
         }  
     }
     button {
@@ -42,10 +43,10 @@ export const formCss = css`
         border-radius: 0 3px 3px 0;
         font-size: 14px;
     }
-    @media(max-width: 550px) {
+    @media(max-width: 650px) {
         button {
-            font-size: 15px;
-            width: 70px;
+            font-size: 16px;
+            width: 85px;
         }  
     }
 `

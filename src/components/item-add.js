@@ -31,11 +31,13 @@ class ItemAdd extends LitElement {
 
     render() {
         const { id, description, selected } = this.todo;
+        
         return html`
         <li id=${id} class=${selected ? `selected` : ``}>
-            <input @change=${() => this.handleToggle(id)}
-            type="checkbox" .checked=${selected}>
-            <p>${description}</p>
+            <span class="check"></span>
+            <p @click=${() => this.handleToggle(id)}>
+            ${description}
+            </p>
             <button @click=${() => this.handleDelete(id)}>delete</button>
         </li>`
     }

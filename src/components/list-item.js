@@ -5,7 +5,7 @@ import { listCss } from '../css/list-item-styles';
 class ListItem extends LitElement {
     static get properties() {
         return {
-            data: { type: Array }
+            data: { type: Array },
         }
     }
 

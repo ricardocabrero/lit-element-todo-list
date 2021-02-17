@@ -10,14 +10,36 @@ export const itemCss = css`
         background: rgb(249, 247, 247);
     }
     p {
+        text-indent: 20px;
         margin: 0px;
         text-align: left;
         flex: 2 1 auto;
         padding-left: 5px;
         text-transform: capitalize;
+        cursor:pointer;
+    }
+    @media(max-width: 650px) {
+        p {
+            font-size: 18px;
+        }
+    }
+    .check {
+        position: absolute;
+        margin-left: 6px;
+        margin-top: -5px;
+        width: 10px;
+        height: 6px;
+        border-bottom: 2px solid green;
     }
     li.selected p {
         text-decoration: line-through;
+    }
+    li.selected .check {      
+        margin-top: -4px;
+        border-bottom: solid 2px green;
+        border-left: solid 2px green;
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);      
     }
     button {
         height: 25px;
@@ -28,5 +50,11 @@ export const itemCss = css`
         box-shadow: none;
         border: 1px solid rgb(220, 53, 69);
         outline: none;
+    }
+    @media(max-width: 650px) {
+        button {
+            height: 28px;
+            font-size: 16px;
+        }
     }
 `

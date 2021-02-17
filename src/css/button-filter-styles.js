@@ -15,9 +15,10 @@ export const ButtonFilterCss = css`
         font-size: 14px;
     }
 
-    @media(max-width: 550px) {
+    @media(max-width: 650px) {
         button {
             font-size: 15px;
+            width:93px;
         }
     }
 

@@ -9,9 +9,9 @@ export const mainCss = css`
         align-items: center;
         position: relative;
     }
-    @media(max-width: 550px) {
+    @media(max-width: 450px) {
         main {
-            310px;
+            width:85%;
         }
     }
     h1 {
