@@ -33,9 +33,11 @@ class ItemAdd extends LitElement {
         const { id, description, selected } = this.todo;
         
         return html`
-        <li id=${id} class=${selected ? `selected` : ``}>
+        <li 
+        @click=${() => this.handleToggle(id)}
+        id=${id} class=${selected ? `selected` : ``}>
             <span class="check"></span>
-            <p @click=${() => this.handleToggle(id)}>
+            <p>
             ${description}
             </p>
             <button @click=${() => this.handleDelete(id)}>delete</button>

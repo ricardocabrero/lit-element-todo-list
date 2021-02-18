@@ -8,6 +8,7 @@ export const itemCss = css`
         margin-bottom: 8px;
         align-items: center; 
         background: rgb(249, 247, 247);
+        cursor:pointer;
     }
     p {
         text-indent: 20px;
@@ -16,7 +17,6 @@ export const itemCss = css`
         flex: 2 1 auto;
         padding-left: 5px;
         text-transform: capitalize;
-        cursor:pointer;
     }
     @media(max-width: 650px) {
         p {
