@@ -6,6 +6,4 @@ export const listCss = css`
     }
     ul {
         padding: 0;
-        margin-left: -4px;
-        margin-right: -4px;
     }`

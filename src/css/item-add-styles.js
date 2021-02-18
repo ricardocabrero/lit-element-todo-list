@@ -31,9 +31,18 @@ export const itemCss = css`
         height: 6px;
         border-bottom: 2px solid green;
     }
+    .check:after {
+        content: "";
+        display: block;
+        height: 2px;
+        background: green;
+        transform: rotate(90deg);
+        position: relative;
+        top: 6px;
+    }
     @media(max-width: 650px) {
         .check {
-            margin-top: -4px;
+            margin-top: -3px;
         }
     }
     li.selected p {
@@ -45,6 +54,9 @@ export const itemCss = css`
         border-left: solid 2px green;
         -webkit-transform: rotate(-45deg);
                 transform: rotate(-45deg);      
+    }
+    li.selected .check:after {
+        display: none;
     }
     button {
         height: 25px;
@@ -59,7 +71,7 @@ export const itemCss = css`
     @media(max-width: 650px) {
         button {
             height: 28px;
-            font-size: 16px;
+            font-size: 15px;
         }
     }
 `
