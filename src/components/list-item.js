@@ -13,6 +13,11 @@ class ListItem extends LitElement {
         return[listCss];
     }
 
+    constructor() {
+        super();
+        this.data = [];
+    }
+
     render() {
         return html`<ul>
         ${this.data.map(todo =>

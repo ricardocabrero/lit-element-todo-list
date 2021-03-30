@@ -5,7 +5,8 @@ class ButtonFilter extends LitElement {
     static get properties() {
         return {
             text: { type: String },
-            btnActive: { type: String }
+            btnActive: { type: String },
+            disabled: { type: Boolean }
         }
     }
 
@@ -14,10 +15,10 @@ class ButtonFilter extends LitElement {
     }
 
     render() {
-        const disabled = this.btnActive === this.text;
+        this.disabled = this.btnActive === this.text;
         
         return html`
-        <button ?disabled=${disabled}>${this.text}</button>`
+        <button ?disabled=${this.disabled}>${this.text}</button>`
     }
 }
 

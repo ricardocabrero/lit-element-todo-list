@@ -13,6 +13,11 @@ class ItemAdd extends LitElement {
         return [itemCss];
     }
 
+    constructor() {
+        super();
+        this.todo = {};
+    }
+
     handleToggle(id) {
         this.dispatchEvent(new CustomEvent('toggle-item', {
             composed: true,

@@ -2,5 +2,12 @@
   "dependencies": {
     "lit-element": "^2.4.0",
     "polymer-cli": "Polymer/polymer-cli"
+  },
+  "devDependencies": {
+    "@open-wc/testing": "^2.5.32",
+    "@web/test-runner": "^0.12.17"
+  },
+  "scripts": {
+    "test": "web-test-runner \"test/**/*.test.js\" --node-resolve"
   }
 }

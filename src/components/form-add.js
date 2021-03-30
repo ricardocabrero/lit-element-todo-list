@@ -49,7 +49,8 @@ class FormAdd extends LitElement {
     render() {
         return html`
         <form @submit=${this.handleSubmit}>
-            <input @input=${this.handleChange} type="text" .value=${this.value}>
+            <label class="sr-only" for="input">type one task</label>
+            <input @input=${this.handleChange} id="input" type="text" .value=${this.value}>
             <button type="submit">Add++</button>
         </form>`
     }
